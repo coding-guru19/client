@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MACHATEPA TWO | Home</title>
+  <meta name="description" content="MACHATEPA TWO — South African supply partner for PPE, packaging, office and custom sourcing." />
+  <meta name="theme-color" content="#1363ff" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+<header class="header" id="top">
+  <nav class="nav container" aria-label="Main">
+    <a class="logo" href="index.html"><strong>MACHATEPA TWO</strong></a>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="hide-mobile"><button class="theme-toggle" aria-label="Switch theme">🌓</button></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Sticky mobile bar -->
+<div class="sticky-cta">
+  <a href="contact.html" class="sticky-cta__btn">Request a Quote</a>
+  <a href="tel:+27 68 520 2318" class="sticky-cta_btn sticky-cta_btn--alt">Call</a>
+</div>
+
+<section class="hero">
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="container hero__grid">
+    <div class="hero__text">
+      <h1 class="reveal-from-bottom delay-1">Your Trusted Supply Partner</h1>
+      <p class="lead reveal-from-bottom delay-2">grow • employ • feed families</p>
+
+      <div class="badges reveal-from-bottom delay-3">
+        <span class="badge">Nationwide Delivery</span>
+        <span class="badge">Bulk Pricing</span>
+        <span class="badge">Quality Assured</span>
+      </div>
+
+      <div class="cta reveal-from-bottom delay-3">
+        <a href="services.html" class="btn btn--accent">Explore Services</a>
+        <a href="contact.html" class="btn btn--outline">Get a Quote</a>
+      </div>
+
+      <ul class="hero__stats reveal-from-bottom delay-4">
+        <li><span data-counter="2500">0</span>+ Orders</li>
+        <li><span data-counter="98">0</span>% On-time</li>
+        <li><span data-counter="120">0</span> Suppliers</li>
+      </ul>
+
+      <div class="hero__card reveal delay-4">
+        <strong>On-time. On-budget.</strong><br />
+        Vetted suppliers • QA checks • Transparent lead times
+      </div>
+    </div>
+
+    <!-- 3D cube (tilts with mouse) -->
+    <div class="hero__art reveal tilt3d">
+      <div class="cube">
+        <span class="face f1"></span><span class="face f2"></span><span class="face f3"></span>
+        <span class="face f4"></span><span class="face f5"></span><span class="face f6"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container features section">
+  <article class="card reveal"><h3>Nationwide Delivery</h3><p>Next-day options to major metros, reliable lead times everywhere else.</p></article>
+  <article class="card reveal delay-1"><h3>Quality Assured</h3><p>We partner with vetted manufacturers and maintain strict QA checks.</p></article>
+  <article class="card reveal delay-2"><h3>Bulk Pricing</h3><p>Transparent quotes and volume discounts that help your bottom line.</p></article>
+</section>
+
+<section class="strip">
+  <div class="container strip__grid">
+    <div class="strip__text">
+      <h2 class="reveal">We keep your supply chain moving.</h2>
+      <p class="reveal delay-1">From safety gear to packaging materials, we stock what teams need to operate smoothly.</p>
+      <a href="about.html" class="btn btn--accent reveal delay-2">Learn More</a>
+    </div>
+    <div class="strip__image parallax" role="img" aria-label="Warehouse with boxes ready for dispatch"
+  style="background-image:linear-gradient(rgba(10,14,22,.35),rgba(10,14,22,.35)),url('WhatsApp Image 2025-10-15 at 17.09.34_9c9820f4.jpg');">
+</div>
+  </div>
+</section>
+
+<section class="container slider-section">
+  <h2 class="center reveal">Trusted by Teams</h2>
+  <div class="slider reveal delay-1" aria-label="Client testimonials">
+    <div class="slide">“On time, every time.” — Logistics Co.</div>
+    <div class="slide">“Great prices and service.” — Manufacturing SA</div>
+    <div class="slide">“Seamless ordering.” — Retail Group</div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <h3 class="footer__title">MACHATEPA TWO</h3>
+      <p>grow • employ • feed families</p>
+      <button class="theme-toggle theme-toggle--footer" aria-label="Switch theme">🌓</button>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="footer__links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><a href="mailto:machatepa33@gmail.com">machatepa33@gmail.com</a></p>
+      <p><a href="tel:+27 68 520 2318">+27 68 520 2318</a></p>
+      <div class="footer__cta">
+        <a class="btn btn--small" href="tel:+27 68 520 2318">📞 Call</a>
+        <a class="btn btn--outline btn--small" href="mailto:machatepa33@gmail.com?subject=Quote%20Request">Email</a>
+      </div>
+    </div>
+  </div>
+  <p class="footer__copy">© 2025 MACHATEPA TWO. All rights reserved.</p>
+  <a class="to-top" href="#top" aria-label="Back to top">↑</a>
+</footer>
+</body>
+</html>

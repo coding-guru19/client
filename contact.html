@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact | MACHATEPA TWO</title>
+  <meta name="description" content="Contact MACHATEPA TWO for quotes in under 24 hours." />
+  <link rel="stylesheet" href="style.css"><script defer src="script.js"></script>
+
+  <!-- EmailJS (optional real email sending) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.emailjs) emailjs.init("YOUR_PUBLIC_KEY"); /* replace */
+    });
+  </script>
+</head>
+<body>
+<header class="header" id="top">
+  <nav class="nav container" aria-label="Main">
+    <a class="logo" href="index.html"><strong>MACHATEPA TWO</strong></a>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li><li><a href="contact.html" aria-current="page">Contact</a></li>
+      <li class="hide-mobile"><button class="theme-toggle">🌓</button></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1 class="reveal-from-bottom">Get in Touch</h1>
+    <p class="lead reveal-from-bottom delay-1">Quotes in under 24 hours. We’re ready to help.</p>
+  </div>
+</section>
+
+<section class="container contact section">
+  <form id="contactForm" class="contact__form reveal" autocomplete="on" aria-labelledby="contactHeading">
+    <h2 id="contactHeading" class="sr-only">Contact form</h2>
+    <input type="text" name="_honeypot" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="grid-2">
+      <label>Full Name<input name="name" required></label>
+      <label>Email<input type="email" name="email" required></label>
+    </div>
+    <label>Phone<input type="tel" name="phone" placeholder="+27 ..." required></label>
+    <label>Company<input name="company"></label>
+    <label>Message<textarea name="message" rows="5" required></textarea></label>
+    <div class="form__actions">
+      <button class="btn btn--accent" type="submit">Send Message</button>
+      <a class="btn btn--outline" href="mailto:machatepa33@gmail.com?subject=Quote%20Request">Use Email App</a>
+      <a class="btn btn--accent" href="tel:+27 68 520 2318">📞 Call Now</a>
+    </div>
+    <p class="form__note">Emails are sent via EmailJS. If it fails, use your email app.</p>
+  </form>
+
+  <aside class="contact__info reveal delay-1">
+    <h3>Contact Details</h3>
+    <p><strong>Email:</strong> <a href="mailto:machatepa33@gmail.com">machatepa33@gmail.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+27 68 520 2318">+27 • your number</a></p>
+    <p><strong>Hours:</strong> Mon–Fri 08:00–17:00</p>
+    <p><strong>Address:</strong> Pretoria, South Africa</p>
+    <iframe class="map" title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=28.176%2C-25.76%2C28.28%2C-25.67&layer=mapnik"></iframe>
+  </aside>
+</section>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div><h3 class="footer__title">MACHATEPA TWO</h3><p>grow • employ • feed families</p></div>
+    <div><h4>Quick Links</h4><ul class="footer__links"><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h4>Contact</h4><p><a href="mailto:machatepa33@gmail.com">machatepa33@gmail.com</a></p><p><a href="tel:+27 68 520 2318">+27 68 520 2318</a></p></div>
+  </div>
+  <p class="footer__copy">© 2025 MACHATEPA TWO. All rights reserved.</p>
+</footer>
+</body>
+</html>
